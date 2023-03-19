@@ -35,7 +35,7 @@ int main() {
     event_loop loop;
     
     // tcp_server server(&loop, "172.16.164.130", 7777);
-    tcp_server server(&loop, "172.16.164.130", 7777);
+    tcp_server server(&loop, "127.0.0.1", 7777);
     // 注册回调方法
     server.add_msg_router(1, callback_test);
     // server.add_msg_router(2, callback_test2);
